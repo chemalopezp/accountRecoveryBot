@@ -94,11 +94,7 @@ function postMessage(context, contexobj, message){
 
 /** Functions declared below are required **/
 function EventHandler(context, event) {
-    if(! context.simpledb.botleveldata.numinstance)
-        context.simpledb.botleveldata.numinstance = 0;
-    numinstances = parseInt(context.simpledb.botleveldata.numinstance) + 1;
-    context.simpledb.botleveldata.numinstance = numinstances;
-    context.sendResponse("Thanks for adding me. You are:" + numinstances);
+    context.sendResponse("Hi, my name is Fred and I see you need some help resetting the password for your PlayStation Network Account today. Before I can do that, we need to confirm some information from you.");
 }
 
 function HttpResponseHandler(context, event) {
